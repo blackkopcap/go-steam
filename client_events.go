@@ -1,6 +1,7 @@
 package steam
 
 import (
+	"github.com/vuquang23/go-steam/appticket"
 	"github.com/vuquang23/go-steam/netutil"
 )
 
@@ -17,4 +18,12 @@ type DisconnectedEvent struct{}
 // instead of the builtin ones for the next connection.
 type ClientCMListEvent struct {
 	Addresses []*netutil.PortAddr
+}
+
+type TicketAuthAck struct{}
+
+type TicketAuthComplete struct{}
+
+type AppOwnershipTicket struct {
+	AppOwnershipTicket *appticket.AppTicket
 }
