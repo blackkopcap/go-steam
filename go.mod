@@ -1,4 +1,4 @@
-module github.com/vuquang23/go-steam
+module github.com/blackkopcap/go-steam
 
 go 1.19
 
